@@ -1,24 +1,28 @@
-print("Welcome to student Toolkit")
+num=int(input("How many students to process?"))
 
-name=input("Enter student name:")
-roll_no=input("Enter roll number:")
+for i ini range(num):
+    print("\nProcessing student",i+1)
+    print("Welcome to student Toolkit")
+    name=input("Enter student name:")
+    roll_no=input("Enter roll number:")
 
-print("\nStudent Deatails")
-print("Name:",name)
-print("Roll no:",roll_no)
+    print("\nStudent Deatails")
+    print("Name:",name)
+    print("Roll no:",roll_no)
 
-print("\nEnter Marks")
+    print("\nEnter Marks")
 
-maths=int(input("Enter Maths marks:"))
-science=int(input("Enter Science marks:"))
-english=int(input("Enter English marks:"))
+    maths=int(input("Enter Maths marks:"))
+    science=int(input("Enter Science marks:"))
+    english=int(input("Enter English marks:"))
 
-total = maths + science + english
-percentage = total / 3
+    total = maths + science + english
+    percentage = total / 3
 
-print("\nResult")
-print("Total Marks:",total)
-print("Percentage:",percentage)
+    print("\nResult")
+    print("Total Marks:",total)
+    print("Percentage:",percentage)
+
 
 if percentage >=40:
   print("Status:Pass")
