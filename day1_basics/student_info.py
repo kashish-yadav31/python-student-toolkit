@@ -1,8 +1,5 @@
-num=int(input("How many students to process?"))
-
-for i ini range(num):
-    print("\nProcessing student",i+1)
-    print("Welcome to student Toolkit")
+def process_student():
+    print("Welcome to Student Toolkit")
     name=input("Enter student name:")
     roll_no=input("Enter roll number:")
 
@@ -24,8 +21,13 @@ for i ini range(num):
     print("Percentage:",percentage)
 
 
-if percentage >=40:
-  print("Status:Pass")
-else:
-  print("Status:Fail")
+    if percentage >=40:
+        print("Status:Pass")
+    else:
+        print("Status:Fail")
+num=int(input("How many students to process?"))
+
+    for i in range(num):
+        print("\nProcessing student",i+1)
+        process_student()
   
